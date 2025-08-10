@@ -69,16 +69,20 @@ class KMeansModel:
         X_scaled = self.scaler.transform(X)
         clusters = self.kmeans.predict(X_scaled)
 
-        print(f"Cantidad de filas: {len(df)}")
-        print(f"Cantidad de clusters predichos: {len(clusters)}")
-
         resultados = []
         for i in range(len(df)):
+            perfil_asignado = self.cluster_perfiles[clusters[i]].lower()  # perfil asignado (minusculas)
+            puntajes_fila = {p: X.iloc[i][p] for p in self.perfiles_elegidos}  # puntajes vector fila
+            puntaje_perfil = puntajes_fila.get(perfil_asignado, 0)  # puntaje para el perfil asignado
+
             resultado = {
                 "nombre": df.iloc[i]["nombre"] if "nombre" in df.columns else None,
                 "cluster": int(clusters[i]),
-                "perfil_estimado": self.cluster_perfiles[clusters[i]]
+                "perfil_estimado": self.cluster_perfiles[clusters[i]],
+                "puntaje_perfil": int(puntaje_perfil)  # <-- convertir a int nativo
             }
             resultados.append(resultado)
         return resultados
+
+
 
