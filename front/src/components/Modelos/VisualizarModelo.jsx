@@ -19,7 +19,9 @@ import {
   Fade,
   Grow,
   Slide,
-  Zoom
+  Zoom,
+  Collapse,
+  IconButton
 } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import { keyframes } from "@emotion/react";
@@ -46,6 +48,8 @@ import {
   ResponsiveContainer
 } from "recharts";
 import { generarPDF } from "../../utils/pdfUtils";
+import { ExpandMore, ExpandLess, Save } from "@mui/icons-material";
+import SegundoModelo from "./CargarSegundoModelo";
 
 // Animación de brillo neón
 const neonGlow = keyframes`
@@ -91,6 +95,9 @@ export default function VisualizarModelo() {
   const [modeloSeleccionado, setModeloSeleccionado] = useState(null);
   const [cargando, setCargando] = useState(true);
   const [error, setError] = useState(null);
+  const [newData, setNewData] = useState([]);
+  const [open, setOpen] = useState(false);
+  const [nuevaCarga, setNuevaCarga] = useState(false);
 
   // Referencia al contenedor del reporte para PDF
   const reporteRef = useRef();
@@ -131,6 +138,9 @@ El objetivo de KMeans es agrupar registros en clusters según similitud de sus r
 
     cargarModelos();
   }, []);
+  const handleCargarNuevoSetDatos = async () =>{
+    setNuevaCarga(true);
+  }
 
   const cargarModelo = async (nombre) => {
     if (!nombre) {
@@ -145,6 +155,8 @@ El objetivo de KMeans es agrupar registros en clusters según similitud de sus r
       }
       const data = await res.json();
       setModeloSeleccionado(data);
+        console.log("Modelos cargados:", data);
+
       setError(null);
     } catch (err) {
       setError(err.message);
@@ -645,53 +657,83 @@ El objetivo de KMeans es agrupar registros en clusters según similitud de sus r
                     fontWeight: 'bold'
                   }}
                 >
-                  Resultados de Clasificación
+                  Resultados de Clasificación en Tabla
                 </Typography>
 
-                <TableContainer
-                  component={Paper}
+                <Box>
+      {/* Botón para expandir/colapsar */}
+      <Box sx={{ display: "flex", alignItems: "center", mb: 1 }}>
+        <IconButton
+          onClick={() => setOpen(!open)}
+          aria-label={open ? "Colapsar tabla" : "Expandir tabla"}
+          size="small"
+        >
+          {open ? <ExpandLess /> : <ExpandMore />}
+        </IconButton>
+        <strong>{open ? "Ocultar Resultados" : "Mostrar Resultados de cada Registro"}</strong>
+      </Box>
+
+      {/* Contenedor colapsable */}
+      <Collapse in={open} timeout="auto" unmountOnExit>
+        <TableContainer
+          component={Paper}
+          sx={{
+            borderRadius: "12px",
+            overflow: "hidden",
+            border: "1px solid",
+            borderColor: "divider",
+            boxShadow: "0 4px 20px rgba(0, 0, 0, 0.1)"
+          }}
+        >
+          <Table>
+            <TableHead>
+              <TableRow sx={{ bgcolor: "background.paper" }}>
+                <StyledTableCell className="header">Nombre</StyledTableCell>
+                <StyledTableCell className="header">Cluster</StyledTableCell>
+                <StyledTableCell className="header">Perfil Estimado</StyledTableCell>
+                <StyledTableCell className="header">Puntaje Perfil</StyledTableCell>
+              </TableRow>
+            </TableHead>
+            <TableBody>
+              {modeloSeleccionado.resultados.map((r, idx) => (
+                <TableRow
+                  key={idx}
                   sx={{
-                    borderRadius: '12px',
-                    overflow: 'hidden',
-                    border: '1px solid',
-                    borderColor: 'divider',
-                    boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)'
+                    "&:nth-of-type(odd)": {
+                      bgcolor: "rgba(0, 255, 170, 0.05)"
+                    },
+                    "&:hover": {
+                      bgcolor: "rgba(0, 255, 170, 0.1)"
+                    }
                   }}
                 >
-                  <Table>
-                    <TableHead>
-                      <TableRow sx={{ bgcolor: 'background.paper' }}>
-                        <StyledTableCell className="header">Nombre</StyledTableCell>
-                        <StyledTableCell className="header">Cluster</StyledTableCell>
-                        <StyledTableCell className="header">Perfil Estimado</StyledTableCell>
-                        <StyledTableCell className="header">Puntaje Perfil</StyledTableCell>
-                      </TableRow>
-                    </TableHead>
-                    <TableBody>
-                      {modeloSeleccionado.resultados.map((r, idx) => (
-                        <TableRow
-                          key={idx}
-                          sx={{
-                            '&:nth-of-type(odd)': {
-                              bgcolor: 'rgba(0, 255, 170, 0.05)'
-                            },
-                            '&:hover': {
-                              bgcolor: 'rgba(0, 255, 170, 0.1)'
-                            }
-                          }}
-                        >
-                          <StyledTableCell>{r.nombre || "-"}</StyledTableCell>
-                          <StyledTableCell>{r.cluster}</StyledTableCell>
-                          <StyledTableCell>{r.perfil_estimado}</StyledTableCell>
-                          <StyledTableCell>{r.puntaje_perfil || "-"}</StyledTableCell>
-                        </TableRow>
-                      ))}
-                    </TableBody>
-                  </Table>
-                </TableContainer>
+                  <StyledTableCell>{r.nombre || "-"}</StyledTableCell>
+                  <StyledTableCell>{r.cluster}</StyledTableCell>
+                  <StyledTableCell>{r.perfil_estimado}</StyledTableCell>
+                  <StyledTableCell>{r.puntaje_perfil || "-"}</StyledTableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </TableContainer>
+      </Collapse>
+    </Box>
+    {!nuevaCarga && (
+      <Button
+            onClick={handleCargarNuevoSetDatos}
+          >
+            Cargar nuevo set de Datos con la configuración del modelo actual
+          </Button>
+    )}
+    
+
+          {nuevaCarga && (
+            <SegundoModelo n_clusters = {modeloSeleccionado.n_clusters} perfiles = {modeloSeleccionado.perfiles} />
+          )}
               </StyledPaper>
             </div>
           </Fade>
+          
         </>
       )}
 
@@ -738,6 +780,7 @@ El objetivo de KMeans es agrupar registros en clusters según similitud de sus r
           </Alert>
         </Zoom>
       )}
+      
     </Box>
   );
 }

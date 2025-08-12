@@ -236,6 +236,7 @@ export default function CrearModelo2() {
   const refFinal = useRef(null);
 
   const [csvFile, setCsvFile] = useState(null);
+  const [modGenerado,setModGenerado] = useState(false);
   const [csvData, setCsvData] = useState([]);
   const [csvHeaders, setCsvHeaders] = useState([]);
   const [selectedColumns, setSelectedColumns] = useState([]);
@@ -513,6 +514,7 @@ export default function CrearModelo2() {
       }
 
       setResultados(data.resultados);
+      setModGenerado(true);
     } catch (err) {
       setError(err.message || "Error al conectar con el servidor");
       console.error("Error en predicción:", err);
@@ -563,8 +565,8 @@ export default function CrearModelo2() {
       }
 
       alert(data.message || "Modelo guardado exitosamente");
-      setNombreModelo("");
-      setResultados([]);
+      // setNombreModelo("");
+      // setResultados([]);
     } catch (err) {
       setError(err.message || "Error al conectar con el servidor");
       console.error("Error guardando modelo:", err);
@@ -589,13 +591,13 @@ export default function CrearModelo2() {
 
   // Índice de accesibilidad
   const indiceSecciones = [
-    { label: "Inicio", icon: <ArrowUpward />, ref: refInicio },
-    { label: "Carga de Datos", icon: <Assignment />, ref: refCarga },
-    { label: "Configurar Modelo", icon: <ListAlt />, ref: refConfig },
-    { label: "Análisis de Datos", icon: <Assessment />, ref: refAnalisis },
-    { label: "Seleccionar Columnas", icon: <TableChart />, ref: refColumnas },
-    { label: "Resultados", icon: <DoneAll />, ref: refResultados },
-    { label: "Final", icon: <ArrowDownward />, ref: refFinal }
+    !modGenerado &&{ label: "Inicio", icon: <ArrowUpward />, ref: refInicio },
+    !modGenerado && { label: "Carga de Datos", icon: <Assignment />, ref: refCarga },
+    !modGenerado && { label: "Configurar Modelo", icon: <ListAlt />, ref: refConfig },
+    !modGenerado && { label: "Análisis de Datos", icon: <Assessment />, ref: refAnalisis },
+    !modGenerado && { label: "Seleccionar Columnas", icon: <TableChart />, ref: refColumnas },
+    modGenerado && { label: "Resultados", icon: <DoneAll />, ref: refResultados },
+    modGenerado && { label: "Final", icon: <ArrowDownward />, ref: refFinal }
   ];
 
   return (
@@ -742,6 +744,8 @@ export default function CrearModelo2() {
           </Alert>
         </Zoom>
       )}
+      {!modGenerado && (
+        <div>
 
       {/* Sección 1: Carga de archivo */}
       <div ref={refCarga} />
@@ -1033,62 +1037,7 @@ export default function CrearModelo2() {
             />
           </Box>
 
-          <Box sx={{ display: 'flex', justifyContent: 'center', gap: 2 }}>
-            <StyledButton
-              variant="contained"
-              color="primary"
-              size="large"
-              startIcon={<PlayArrow />}
-              onClick={handlePredict}
-              disabled={procesando || !csvFile || perfilesSeleccionados.length < 2}
-              sx={{
-                minWidth: '250px',
-                py: 1.5,
-                fontSize: '1.1rem',
-                animation: `${pulse} 2s infinite`,
-                '&.Mui-disabled': {
-                  animation: 'none',
-                  opacity: 0.7
-                }
-              }}
-            >
-              {procesando ? (
-                <>
-                  <CircularProgress size={24} sx={{ mr: 1, color: 'white' }} />
-                  Generando Modelo...
-                </>
-              ) : (
-                'Generar Modelo'
-              )}
-            </StyledButton>
-            <StyledButton
-              variant="contained"
-              color="secondary"
-              size="large"
-              startIcon={<Save />}
-              onClick={handleGuardarModelo}
-              disabled={procesando || !csvFile || perfilesSeleccionados.length < 2 || !nombreModelo.trim()}
-              sx={{
-                minWidth: '250px',
-                py: 1.5,
-                fontSize: '1.1rem',
-                animation: `${pulse} 2s infinite`,
-                '&.Mui-disabled': {
-                  animation: 'none',
-                  opacity: 0.7
-                }
-              }}
-            >
-              {procesando ? (
-                <>
-                  <CircularProgress size={24} sx={{ mr: 1, color: 'white' }} />
-                  Guardando Modelo...
-                </>
-              ) : (
-                'Guardar Modelo'
-              )}
-            </StyledButton>
-          </Box>
+          
         </StyledPaper>
       </Slide>
 
@@ -1117,7 +1066,7 @@ export default function CrearModelo2() {
                   flexGrow: 1
                 }}
               >
-                Análisis de Datos
+                Análisis de Datos Del CSV
               </Typography>
             </Box>
 
@@ -1563,6 +1512,10 @@ export default function CrearModelo2() {
       )}
 
       {/* Sección 4: Resultados del modelo */}
+      </div>
+      )}
+
+
       <div ref={refResultados} />
       {resultados.length > 0 && (
         <Slide direction="up" in={true} mountOnEnter unmountOnExit>
@@ -1733,24 +1686,118 @@ export default function CrearModelo2() {
 
       {/* Final */}
       <div ref={refFinal} />
-      <Box sx={{
-        mt: 6,
-        mb: 2,
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center'
-      }}>
-        <Button
-          variant="contained"
-          color="primary"
-          startIcon={<ArrowUpward />}
-          onClick={() => scrollToRef(refInicio)}
-          sx={{ borderRadius: '20px', fontWeight: 'bold', fontSize: '1rem', px: 3, py: 1 }}
-          aria-label="Ir al inicio"
-        >
-          Ir al inicio
-        </Button>
-      </Box>
+      <Box
+  sx={{
+    mt: 6,
+    mb: 2,
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    gap: 2 // espacio uniforme entre botones
+  }}
+>
+  {/* Botón Ir al inicio */}
+  <Button
+    variant="contained"
+    color="primary"
+    startIcon={<ArrowUpward />}
+    onClick={() => scrollToRef(refInicio)}
+    sx={{
+      borderRadius: '20px',
+      fontWeight: 'bold',
+      fontSize: '1rem',
+      px: 3,
+      py: 1,
+      minWidth: '250px', // igual ancho que el otro
+      animation: `${pulse} 2s infinite`,
+      '&.Mui-disabled': {
+        animation: 'none',
+        opacity: 0.7
+      }
+    }}
+    aria-label="Ir al inicio"
+  >
+    Ir al inicio
+  </Button>
+
+  {/* Botón Guardar Modelo */}
+            {!modGenerado && (
+  <Button
+    variant="contained"
+    color="primary"
+    size="large"
+    startIcon={<PlayArrow />}
+    onClick={handlePredict}
+    disabled={
+      procesando ||
+      !csvFile ||
+      perfilesSeleccionados.length < 2
+    }
+    sx={{
+      borderRadius: '20px',
+      fontWeight: 'bold',
+      fontSize: '1rem',
+      px: 3,
+      py: 1,
+      minWidth: '250px',
+      animation: `${pulse} 2s infinite`,
+      '&.Mui-disabled': {
+        animation: 'none',
+        opacity: 0.7
+      }
+    }}
+  >
+    {procesando ? (
+      <>
+        <CircularProgress size={24} sx={{ mr: 1, color: 'white' }} />
+        Generando Modelo...
+      </>
+    ) : (
+      'Generar Modelo'
+    )}
+  </Button>
+)}
+
+
+  {modGenerado && (
+    <Button
+      variant="contained"
+      color="secondary"
+      size="large"
+      startIcon={<Save />}
+      onClick={handleGuardarModelo}
+      disabled={
+        procesando ||
+        !csvFile ||
+        perfilesSeleccionados.length < 2 ||
+        !nombreModelo.trim()
+      }
+      sx={{
+        borderRadius: '20px',
+        fontWeight: 'bold',
+        fontSize: '1rem',
+        px: 3,
+        py: 1,
+        minWidth: '250px',
+        animation: `${pulse} 2s infinite`,
+        '&.Mui-disabled': {
+          animation: 'none',
+          opacity: 0.7
+        }
+      }}
+    >
+      {procesando ? (
+        <>
+          <CircularProgress size={24} sx={{ mr: 1, color: 'white' }} />
+          Guardando Modelo...
+        </>
+      ) : (
+        'Guardar Modelo'
+      )}
+    </Button>
+  )}
+</Box>
+
     </Box>
   );
 }
