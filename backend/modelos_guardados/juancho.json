@@ -1,0 +1,616 @@
+{
+    "nombre_modelo": "juancho",
+    "n_clusters": 3,
+    "perfiles": [
+        "conservador",
+        "innovador",
+        "pragmatico"
+    ],
+    "resultados": [
+        {
+            "nombre": "Andrés",
+            "cluster": 1,
+            "perfil_estimado": "Innovador",
+            "puntaje_perfil": 8
+        },
+        {
+            "nombre": "Luis",
+            "cluster": 2,
+            "perfil_estimado": "Conservador",
+            "puntaje_perfil": 28
+        },
+        {
+            "nombre": "María",
+            "cluster": 2,
+            "perfil_estimado": "Conservador",
+            "puntaje_perfil": 40
+        },
+        {
+            "nombre": "Paula",
+            "cluster": 1,
+            "perfil_estimado": "Innovador",
+            "puntaje_perfil": 36
+        },
+        {
+            "nombre": "Sofía",
+            "cluster": 1,
+            "perfil_estimado": "Innovador",
+            "puntaje_perfil": 20
+        },
+        {
+            "nombre": "Lucía",
+            "cluster": 2,
+            "perfil_estimado": "Conservador",
+            "puntaje_perfil": 44
+        },
+        {
+            "nombre": "Paula",
+            "cluster": 2,
+            "perfil_estimado": "Conservador",
+            "puntaje_perfil": 40
+        },
+        {
+            "nombre": "Isabel",
+            "cluster": 2,
+            "perfil_estimado": "Conservador",
+            "puntaje_perfil": 44
+        },
+        {
+            "nombre": "Ana",
+            "cluster": 1,
+            "perfil_estimado": "Innovador",
+            "puntaje_perfil": 32
+        },
+        {
+            "nombre": "Elena",
+            "cluster": 0,
+            "perfil_estimado": "Pragmatico",
+            "puntaje_perfil": 40
+        },
+        {
+            "nombre": "José",
+            "cluster": 1,
+            "perfil_estimado": "Innovador",
+            "puntaje_perfil": 16
+        },
+        {
+            "nombre": "Isabel",
+            "cluster": 1,
+            "perfil_estimado": "Innovador",
+            "puntaje_perfil": 4
+        },
+        {
+            "nombre": "Carlos",
+            "cluster": 1,
+            "perfil_estimado": "Innovador",
+            "puntaje_perfil": 8
+        },
+        {
+            "nombre": "Pedro",
+            "cluster": 1,
+            "perfil_estimado": "Innovador",
+            "puntaje_perfil": 0
+        },
+        {
+            "nombre": "María",
+            "cluster": 0,
+            "perfil_estimado": "Pragmatico",
+            "puntaje_perfil": 44
+        },
+        {
+            "nombre": "Diego",
+            "cluster": 2,
+            "perfil_estimado": "Conservador",
+            "puntaje_perfil": 44
+        },
+        {
+            "nombre": "Miguel",
+            "cluster": 2,
+            "perfil_estimado": "Conservador",
+            "puntaje_perfil": 40
+        },
+        {
+            "nombre": "Miguel",
+            "cluster": 0,
+            "perfil_estimado": "Pragmatico",
+            "puntaje_perfil": 52
+        },
+        {
+            "nombre": "Andrés",
+            "cluster": 1,
+            "perfil_estimado": "Innovador",
+            "puntaje_perfil": 48
+        },
+        {
+            "nombre": "Elena",
+            "cluster": 0,
+            "perfil_estimado": "Pragmatico",
+            "puntaje_perfil": 36
+        },
+        {
+            "nombre": "Pedro",
+            "cluster": 2,
+            "perfil_estimado": "Conservador",
+            "puntaje_perfil": 40
+        },
+        {
+            "nombre": "Diego",
+            "cluster": 1,
+            "perfil_estimado": "Innovador",
+            "puntaje_perfil": 40
+        },
+        {
+            "nombre": "Paula",
+            "cluster": 0,
+            "perfil_estimado": "Pragmatico",
+            "puntaje_perfil": 36
+        },
+        {
+            "nombre": "Jorge",
+            "cluster": 0,
+            "perfil_estimado": "Pragmatico",
+            "puntaje_perfil": 36
+        },
+        {
+            "nombre": "Miguel",
+            "cluster": 0,
+            "perfil_estimado": "Pragmatico",
+            "puntaje_perfil": 32
+        },
+        {
+            "nombre": "Diego",
+            "cluster": 1,
+            "perfil_estimado": "Innovador",
+            "puntaje_perfil": 48
+        },
+        {
+            "nombre": "Paula",
+            "cluster": 2,
+            "perfil_estimado": "Conservador",
+            "puntaje_perfil": 32
+        },
+        {
+            "nombre": "Elena",
+            "cluster": 0,
+            "perfil_estimado": "Pragmatico",
+            "puntaje_perfil": 40
+        },
+        {
+            "nombre": "Lucía",
+            "cluster": 1,
+            "perfil_estimado": "Innovador",
+            "puntaje_perfil": 32
+        },
+        {
+            "nombre": "Paula",
+            "cluster": 1,
+            "perfil_estimado": "Innovador",
+            "puntaje_perfil": 40
+        },
+        {
+            "nombre": "Ana",
+            "cluster": 2,
+            "perfil_estimado": "Conservador",
+            "puntaje_perfil": 36
+        },
+        {
+            "nombre": "Andrés",
+            "cluster": 0,
+            "perfil_estimado": "Pragmatico",
+            "puntaje_perfil": 48
+        },
+        {
+            "nombre": "Jorge",
+            "cluster": 1,
+            "perfil_estimado": "Innovador",
+            "puntaje_perfil": 20
+        },
+        {
+            "nombre": "Ana",
+            "cluster": 1,
+            "perfil_estimado": "Innovador",
+            "puntaje_perfil": 24
+        },
+        {
+            "nombre": "Valeria",
+            "cluster": 0,
+            "perfil_estimado": "Pragmatico",
+            "puntaje_perfil": 48
+        },
+        {
+            "nombre": "Isabel",
+            "cluster": 2,
+            "perfil_estimado": "Conservador",
+            "puntaje_perfil": 40
+        },
+        {
+            "nombre": "Diego",
+            "cluster": 0,
+            "perfil_estimado": "Pragmatico",
+            "puntaje_perfil": 44
+        },
+        {
+            "nombre": "Paula",
+            "cluster": 0,
+            "perfil_estimado": "Pragmatico",
+            "puntaje_perfil": 36
+        },
+        {
+            "nombre": "Andrés",
+            "cluster": 1,
+            "perfil_estimado": "Innovador",
+            "puntaje_perfil": 44
+        },
+        {
+            "nombre": "José",
+            "cluster": 1,
+            "perfil_estimado": "Innovador",
+            "puntaje_perfil": 16
+        },
+        {
+            "nombre": "Valeria",
+            "cluster": 0,
+            "perfil_estimado": "Pragmatico",
+            "puntaje_perfil": 40
+        },
+        {
+            "nombre": "Sofía",
+            "cluster": 1,
+            "perfil_estimado": "Innovador",
+            "puntaje_perfil": 28
+        },
+        {
+            "nombre": "Paula",
+            "cluster": 0,
+            "perfil_estimado": "Pragmatico",
+            "puntaje_perfil": 36
+        },
+        {
+            "nombre": "Luis",
+            "cluster": 2,
+            "perfil_estimado": "Conservador",
+            "puntaje_perfil": 40
+        },
+        {
+            "nombre": "Miguel",
+            "cluster": 1,
+            "perfil_estimado": "Innovador",
+            "puntaje_perfil": 40
+        },
+        {
+            "nombre": "Carlos",
+            "cluster": 2,
+            "perfil_estimado": "Conservador",
+            "puntaje_perfil": 44
+        },
+        {
+            "nombre": "María",
+            "cluster": 0,
+            "perfil_estimado": "Pragmatico",
+            "puntaje_perfil": 32
+        },
+        {
+            "nombre": "José",
+            "cluster": 1,
+            "perfil_estimado": "Innovador",
+            "puntaje_perfil": 12
+        },
+        {
+            "nombre": "Sofía",
+            "cluster": 0,
+            "perfil_estimado": "Pragmatico",
+            "puntaje_perfil": 32
+        },
+        {
+            "nombre": "Lucía",
+            "cluster": 2,
+            "perfil_estimado": "Conservador",
+            "puntaje_perfil": 36
+        },
+        {
+            "nombre": "Elena",
+            "cluster": 0,
+            "perfil_estimado": "Pragmatico",
+            "puntaje_perfil": 28
+        },
+        {
+            "nombre": "Sofía",
+            "cluster": 2,
+            "perfil_estimado": "Conservador",
+            "puntaje_perfil": 36
+        },
+        {
+            "nombre": "Pedro",
+            "cluster": 2,
+            "perfil_estimado": "Conservador",
+            "puntaje_perfil": 28
+        },
+        {
+            "nombre": "Valeria",
+            "cluster": 1,
+            "perfil_estimado": "Innovador",
+            "puntaje_perfil": 0
+        },
+        {
+            "nombre": "Ana",
+            "cluster": 0,
+            "perfil_estimado": "Pragmatico",
+            "puntaje_perfil": 40
+        },
+        {
+            "nombre": "Miguel",
+            "cluster": 2,
+            "perfil_estimado": "Conservador",
+            "puntaje_perfil": 40
+        },
+        {
+            "nombre": "Isabel",
+            "cluster": 0,
+            "perfil_estimado": "Pragmatico",
+            "puntaje_perfil": 32
+        },
+        {
+            "nombre": "Sofía",
+            "cluster": 2,
+            "perfil_estimado": "Conservador",
+            "puntaje_perfil": 32
+        },
+        {
+            "nombre": "Lucía",
+            "cluster": 1,
+            "perfil_estimado": "Innovador",
+            "puntaje_perfil": 32
+        },
+        {
+            "nombre": "Paula",
+            "cluster": 1,
+            "perfil_estimado": "Innovador",
+            "puntaje_perfil": 40
+        },
+        {
+            "nombre": "Ana",
+            "cluster": 1,
+            "perfil_estimado": "Innovador",
+            "puntaje_perfil": 36
+        },
+        {
+            "nombre": "Lucía",
+            "cluster": 1,
+            "perfil_estimado": "Innovador",
+            "puntaje_perfil": 8
+        },
+        {
+            "nombre": "María",
+            "cluster": 2,
+            "perfil_estimado": "Conservador",
+            "puntaje_perfil": 40
+        },
+        {
+            "nombre": "Sofía",
+            "cluster": 1,
+            "perfil_estimado": "Innovador",
+            "puntaje_perfil": 36
+        },
+        {
+            "nombre": "Paula",
+            "cluster": 2,
+            "perfil_estimado": "Conservador",
+            "puntaje_perfil": 28
+        },
+        {
+            "nombre": "Valeria",
+            "cluster": 1,
+            "perfil_estimado": "Innovador",
+            "puntaje_perfil": 44
+        },
+        {
+            "nombre": "Miguel",
+            "cluster": 0,
+            "perfil_estimado": "Pragmatico",
+            "puntaje_perfil": 52
+        },
+        {
+            "nombre": "Sofía",
+            "cluster": 1,
+            "perfil_estimado": "Innovador",
+            "puntaje_perfil": 44
+        },
+        {
+            "nombre": "Andrés",
+            "cluster": 0,
+            "perfil_estimado": "Pragmatico",
+            "puntaje_perfil": 28
+        },
+        {
+            "nombre": "Ana",
+            "cluster": 0,
+            "perfil_estimado": "Pragmatico",
+            "puntaje_perfil": 52
+        },
+        {
+            "nombre": "Miguel",
+            "cluster": 0,
+            "perfil_estimado": "Pragmatico",
+            "puntaje_perfil": 40
+        },
+        {
+            "nombre": "Andrés",
+            "cluster": 0,
+            "perfil_estimado": "Pragmatico",
+            "puntaje_perfil": 48
+        },
+        {
+            "nombre": "José",
+            "cluster": 1,
+            "perfil_estimado": "Innovador",
+            "puntaje_perfil": 20
+        },
+        {
+            "nombre": "Valeria",
+            "cluster": 2,
+            "perfil_estimado": "Conservador",
+            "puntaje_perfil": 28
+        },
+        {
+            "nombre": "Andrés",
+            "cluster": 0,
+            "perfil_estimado": "Pragmatico",
+            "puntaje_perfil": 32
+        },
+        {
+            "nombre": "Miguel",
+            "cluster": 0,
+            "perfil_estimado": "Pragmatico",
+            "puntaje_perfil": 36
+        },
+        {
+            "nombre": "Ana",
+            "cluster": 1,
+            "perfil_estimado": "Innovador",
+            "puntaje_perfil": 36
+        },
+        {
+            "nombre": "Carlos",
+            "cluster": 2,
+            "perfil_estimado": "Conservador",
+            "puntaje_perfil": 36
+        },
+        {
+            "nombre": "Jorge",
+            "cluster": 1,
+            "perfil_estimado": "Innovador",
+            "puntaje_perfil": 24
+        },
+        {
+            "nombre": "Jorge",
+            "cluster": 1,
+            "perfil_estimado": "Innovador",
+            "puntaje_perfil": 48
+        },
+        {
+            "nombre": "José",
+            "cluster": 1,
+            "perfil_estimado": "Innovador",
+            "puntaje_perfil": 12
+        },
+        {
+            "nombre": "Elena",
+            "cluster": 0,
+            "perfil_estimado": "Pragmatico",
+            "puntaje_perfil": 40
+        },
+        {
+            "nombre": "Andrés",
+            "cluster": 2,
+            "perfil_estimado": "Conservador",
+            "puntaje_perfil": 44
+        },
+        {
+            "nombre": "Paula",
+            "cluster": 1,
+            "perfil_estimado": "Innovador",
+            "puntaje_perfil": 12
+        },
+        {
+            "nombre": "Diego",
+            "cluster": 0,
+            "perfil_estimado": "Pragmatico",
+            "puntaje_perfil": 56
+        },
+        {
+            "nombre": "Pedro",
+            "cluster": 1,
+            "perfil_estimado": "Innovador",
+            "puntaje_perfil": 52
+        },
+        {
+            "nombre": "Luis",
+            "cluster": 2,
+            "perfil_estimado": "Conservador",
+            "puntaje_perfil": 32
+        },
+        {
+            "nombre": "Luis",
+            "cluster": 1,
+            "perfil_estimado": "Innovador",
+            "puntaje_perfil": 32
+        },
+        {
+            "nombre": "Valeria",
+            "cluster": 1,
+            "perfil_estimado": "Innovador",
+            "puntaje_perfil": 20
+        },
+        {
+            "nombre": "Diego",
+            "cluster": 2,
+            "perfil_estimado": "Conservador",
+            "puntaje_perfil": 44
+        },
+        {
+            "nombre": "Isabel",
+            "cluster": 0,
+            "perfil_estimado": "Pragmatico",
+            "puntaje_perfil": 32
+        },
+        {
+            "nombre": "Lucía",
+            "cluster": 1,
+            "perfil_estimado": "Innovador",
+            "puntaje_perfil": 48
+        },
+        {
+            "nombre": "Ana",
+            "cluster": 2,
+            "perfil_estimado": "Conservador",
+            "puntaje_perfil": 32
+        },
+        {
+            "nombre": "Ana",
+            "cluster": 1,
+            "perfil_estimado": "Innovador",
+            "puntaje_perfil": 44
+        },
+        {
+            "nombre": "José",
+            "cluster": 2,
+            "perfil_estimado": "Conservador",
+            "puntaje_perfil": 28
+        },
+        {
+            "nombre": "Paula",
+            "cluster": 2,
+            "perfil_estimado": "Conservador",
+            "puntaje_perfil": 28
+        },
+        {
+            "nombre": "Paula",
+            "cluster": 1,
+            "perfil_estimado": "Innovador",
+            "puntaje_perfil": 16
+        },
+        {
+            "nombre": "Andrés",
+            "cluster": 0,
+            "perfil_estimado": "Pragmatico",
+            "puntaje_perfil": 24
+        },
+        {
+            "nombre": "Luis",
+            "cluster": 1,
+            "perfil_estimado": "Innovador",
+            "puntaje_perfil": 40
+        },
+        {
+            "nombre": "Pedro",
+            "cluster": 1,
+            "perfil_estimado": "Innovador",
+            "puntaje_perfil": 8
+        }
+    ],
+    "cluster_perfiles": [
+        "Pragmatico",
+        "Innovador",
+        "Conservador"
+    ]
+}

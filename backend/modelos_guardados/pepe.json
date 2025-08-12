@@ -1,0 +1,614 @@
+{
+    "nombre_modelo": "pepe",
+    "n_clusters": 2,
+    "perfiles": [
+        "conservador",
+        "emocional"
+    ],
+    "resultados": [
+        {
+            "nombre": "Andrés",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 36
+        },
+        {
+            "nombre": "Luis",
+            "cluster": 0,
+            "perfil_estimado": "Conservador",
+            "puntaje_perfil": 28
+        },
+        {
+            "nombre": "María",
+            "cluster": 0,
+            "perfil_estimado": "Conservador",
+            "puntaje_perfil": 40
+        },
+        {
+            "nombre": "Paula",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 8
+        },
+        {
+            "nombre": "Sofía",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 28
+        },
+        {
+            "nombre": "Lucía",
+            "cluster": 0,
+            "perfil_estimado": "Conservador",
+            "puntaje_perfil": 44
+        },
+        {
+            "nombre": "Paula",
+            "cluster": 0,
+            "perfil_estimado": "Conservador",
+            "puntaje_perfil": 40
+        },
+        {
+            "nombre": "Isabel",
+            "cluster": 0,
+            "perfil_estimado": "Conservador",
+            "puntaje_perfil": 44
+        },
+        {
+            "nombre": "Ana",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 16
+        },
+        {
+            "nombre": "Elena",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 4
+        },
+        {
+            "nombre": "José",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 28
+        },
+        {
+            "nombre": "Isabel",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 40
+        },
+        {
+            "nombre": "Carlos",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 36
+        },
+        {
+            "nombre": "Pedro",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 44
+        },
+        {
+            "nombre": "María",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 8
+        },
+        {
+            "nombre": "Diego",
+            "cluster": 0,
+            "perfil_estimado": "Conservador",
+            "puntaje_perfil": 44
+        },
+        {
+            "nombre": "Miguel",
+            "cluster": 0,
+            "perfil_estimado": "Conservador",
+            "puntaje_perfil": 40
+        },
+        {
+            "nombre": "Miguel",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 0
+        },
+        {
+            "nombre": "Andrés",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 0
+        },
+        {
+            "nombre": "Elena",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 12
+        },
+        {
+            "nombre": "Pedro",
+            "cluster": 0,
+            "perfil_estimado": "Conservador",
+            "puntaje_perfil": 40
+        },
+        {
+            "nombre": "Diego",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 12
+        },
+        {
+            "nombre": "Paula",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 4
+        },
+        {
+            "nombre": "Jorge",
+            "cluster": 0,
+            "perfil_estimado": "Conservador",
+            "puntaje_perfil": 20
+        },
+        {
+            "nombre": "Miguel",
+            "cluster": 0,
+            "perfil_estimado": "Conservador",
+            "puntaje_perfil": 24
+        },
+        {
+            "nombre": "Diego",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 4
+        },
+        {
+            "nombre": "Paula",
+            "cluster": 0,
+            "perfil_estimado": "Conservador",
+            "puntaje_perfil": 32
+        },
+        {
+            "nombre": "Elena",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 8
+        },
+        {
+            "nombre": "Lucía",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 16
+        },
+        {
+            "nombre": "Paula",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 16
+        },
+        {
+            "nombre": "Ana",
+            "cluster": 0,
+            "perfil_estimado": "Conservador",
+            "puntaje_perfil": 36
+        },
+        {
+            "nombre": "Andrés",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 4
+        },
+        {
+            "nombre": "Jorge",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 24
+        },
+        {
+            "nombre": "Ana",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 16
+        },
+        {
+            "nombre": "Valeria",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 0
+        },
+        {
+            "nombre": "Isabel",
+            "cluster": 0,
+            "perfil_estimado": "Conservador",
+            "puntaje_perfil": 40
+        },
+        {
+            "nombre": "Diego",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 4
+        },
+        {
+            "nombre": "Paula",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 4
+        },
+        {
+            "nombre": "Andrés",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 8
+        },
+        {
+            "nombre": "José",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 28
+        },
+        {
+            "nombre": "Valeria",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 0
+        },
+        {
+            "nombre": "Sofía",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 24
+        },
+        {
+            "nombre": "Paula",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 12
+        },
+        {
+            "nombre": "Luis",
+            "cluster": 0,
+            "perfil_estimado": "Conservador",
+            "puntaje_perfil": 40
+        },
+        {
+            "nombre": "Miguel",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 12
+        },
+        {
+            "nombre": "Carlos",
+            "cluster": 0,
+            "perfil_estimado": "Conservador",
+            "puntaje_perfil": 44
+        },
+        {
+            "nombre": "María",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 4
+        },
+        {
+            "nombre": "José",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 40
+        },
+        {
+            "nombre": "Sofía",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 12
+        },
+        {
+            "nombre": "Lucía",
+            "cluster": 0,
+            "perfil_estimado": "Conservador",
+            "puntaje_perfil": 36
+        },
+        {
+            "nombre": "Elena",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 4
+        },
+        {
+            "nombre": "Sofía",
+            "cluster": 0,
+            "perfil_estimado": "Conservador",
+            "puntaje_perfil": 36
+        },
+        {
+            "nombre": "Pedro",
+            "cluster": 0,
+            "perfil_estimado": "Conservador",
+            "puntaje_perfil": 28
+        },
+        {
+            "nombre": "Valeria",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 56
+        },
+        {
+            "nombre": "Ana",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 4
+        },
+        {
+            "nombre": "Miguel",
+            "cluster": 0,
+            "perfil_estimado": "Conservador",
+            "puntaje_perfil": 40
+        },
+        {
+            "nombre": "Isabel",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 8
+        },
+        {
+            "nombre": "Sofía",
+            "cluster": 0,
+            "perfil_estimado": "Conservador",
+            "puntaje_perfil": 32
+        },
+        {
+            "nombre": "Lucía",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 8
+        },
+        {
+            "nombre": "Paula",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 8
+        },
+        {
+            "nombre": "Ana",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 12
+        },
+        {
+            "nombre": "Lucía",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 32
+        },
+        {
+            "nombre": "María",
+            "cluster": 0,
+            "perfil_estimado": "Conservador",
+            "puntaje_perfil": 40
+        },
+        {
+            "nombre": "Sofía",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 16
+        },
+        {
+            "nombre": "Paula",
+            "cluster": 0,
+            "perfil_estimado": "Conservador",
+            "puntaje_perfil": 28
+        },
+        {
+            "nombre": "Valeria",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 8
+        },
+        {
+            "nombre": "Miguel",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 4
+        },
+        {
+            "nombre": "Sofía",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 4
+        },
+        {
+            "nombre": "Andrés",
+            "cluster": 0,
+            "perfil_estimado": "Conservador",
+            "puntaje_perfil": 20
+        },
+        {
+            "nombre": "Ana",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 4
+        },
+        {
+            "nombre": "Miguel",
+            "cluster": 0,
+            "perfil_estimado": "Conservador",
+            "puntaje_perfil": 20
+        },
+        {
+            "nombre": "Andrés",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 8
+        },
+        {
+            "nombre": "José",
+            "cluster": 0,
+            "perfil_estimado": "Conservador",
+            "puntaje_perfil": 20
+        },
+        {
+            "nombre": "Valeria",
+            "cluster": 0,
+            "perfil_estimado": "Conservador",
+            "puntaje_perfil": 28
+        },
+        {
+            "nombre": "Andrés",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 12
+        },
+        {
+            "nombre": "Miguel",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 16
+        },
+        {
+            "nombre": "Ana",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 12
+        },
+        {
+            "nombre": "Carlos",
+            "cluster": 0,
+            "perfil_estimado": "Conservador",
+            "puntaje_perfil": 36
+        },
+        {
+            "nombre": "Jorge",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 12
+        },
+        {
+            "nombre": "Jorge",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 4
+        },
+        {
+            "nombre": "José",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 28
+        },
+        {
+            "nombre": "Elena",
+            "cluster": 0,
+            "perfil_estimado": "Conservador",
+            "puntaje_perfil": 16
+        },
+        {
+            "nombre": "Andrés",
+            "cluster": 0,
+            "perfil_estimado": "Conservador",
+            "puntaje_perfil": 44
+        },
+        {
+            "nombre": "Paula",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 36
+        },
+        {
+            "nombre": "Diego",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 4
+        },
+        {
+            "nombre": "Pedro",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 0
+        },
+        {
+            "nombre": "Luis",
+            "cluster": 0,
+            "perfil_estimado": "Conservador",
+            "puntaje_perfil": 32
+        },
+        {
+            "nombre": "Luis",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 12
+        },
+        {
+            "nombre": "Valeria",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 20
+        },
+        {
+            "nombre": "Diego",
+            "cluster": 0,
+            "perfil_estimado": "Conservador",
+            "puntaje_perfil": 44
+        },
+        {
+            "nombre": "Isabel",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 12
+        },
+        {
+            "nombre": "Lucía",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 4
+        },
+        {
+            "nombre": "Ana",
+            "cluster": 0,
+            "perfil_estimado": "Conservador",
+            "puntaje_perfil": 32
+        },
+        {
+            "nombre": "Ana",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 4
+        },
+        {
+            "nombre": "José",
+            "cluster": 0,
+            "perfil_estimado": "Conservador",
+            "puntaje_perfil": 28
+        },
+        {
+            "nombre": "Paula",
+            "cluster": 0,
+            "perfil_estimado": "Conservador",
+            "puntaje_perfil": 28
+        },
+        {
+            "nombre": "Paula",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 40
+        },
+        {
+            "nombre": "Andrés",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 16
+        },
+        {
+            "nombre": "Luis",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 16
+        },
+        {
+            "nombre": "Pedro",
+            "cluster": 1,
+            "perfil_estimado": "Emocional",
+            "puntaje_perfil": 36
+        }
+    ],
+    "cluster_perfiles": [
+        "Conservador",
+        "Emocional"
+    ]
+}
