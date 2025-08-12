@@ -718,6 +718,17 @@ El objetivo de KMeans es agrupar registros en clusters según similitud de sus r
         </TableContainer>
       </Collapse>
     </Box>
+    <Typography
+                  variant="h5"
+                  gutterBottom
+                  sx={{
+                    color: 'secondary.main',
+                    mb: 3,
+                    fontWeight: 'bold'
+                  }}
+                >
+                  Cargar set de Datos con  la configuración del modelo
+                </Typography>
     {!nuevaCarga && (
       <Button
             onClick={handleCargarNuevoSetDatos}
